@@ -1,13 +1,12 @@
 from setuptools import setup, find_namespace_packages
-
 #інструкції для встановлення проекту
 setup(
-    name = "sort_your_folders",
-    version="0.1.0", 
-    author="developer",
-    author_email="gmail.com",
-    description="Hw 7. Clean folder",
-    license="MIT"
+   name='clean_folder_anastasia',
+    version='0.1.0',
+    description='Hw 7. Clean folder',
+    author='Name',
+    author_email='gornanastasia3006@gmail.com',
+    license='MIT',
 )
 
 classifiers=[
