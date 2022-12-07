@@ -130,6 +130,7 @@ def delete_folder(folder: str):
     shutil.unpack_archive(folder[ extract_dir[ format]])
     unpack_archive("resume.zip", './sample', "zip")
 
+
 #Функція file_parser() - це головна функція."""
 def file_parser(folder_for_scan):
 
@@ -137,8 +138,7 @@ def file_parser(folder_for_scan):
         sorted_file_dict = sorter(folder_for_scan)
     except FileNotFoundError:
         return (
-            f"Not able to find ,{folder_for_scan}, folder. Please enter a correct folder name."
-        )
+            f"Not able to find ,{folder_for_scan}, folder. Please enter a correct folder name.")
     except IndexError:
         return "Please enter a folder name."
     except IsADirectoryError:
@@ -153,7 +153,10 @@ def file_parser(folder_for_scan):
 
 
 # 2 конструкція if name == main
-if __name__ == '__main__':
+def main():
     folder_for_scan = sys.argv[1]
     file_parser(Path(folder_for_scan))
     print(f"Start in folder {folder_for_scan}")
+
+if __name__ == "__main__": # тут треба з двома підкреслюваннями
+     main() 
